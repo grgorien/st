@@ -98,47 +98,7 @@ char *termname = "st-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 8;
-
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-        /* 8 normal colors */
-        "#2e3436",
-        "#a40000",
-        "#4e9a06",
-        "#c4a000",
-        "#3465a4",
-        "#75507b",
-        "#34a0a4",
-        "#babdb9",
-
-        /* 8 bright colors */
-        "#555753",
-        "#ef2929",
-        "#8ae234",
-        "#fce94f",
-        "#729fcf",
-        "#ad7fa8",
-        "#72d9cf",
-        "#eeeeec",
-
-        [255] = 0,
-
-        /* more colors can be added after 255 to use with DefaultXX */
-        "#cccccc",
-        "#555555",
-        "#e4e4ef", /* default foreground colour */
-        "#181818", /* default background colour */
-};
-
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+#include "themes/gruber-darker.h"
 
 /*
  * Default shape of cursor
